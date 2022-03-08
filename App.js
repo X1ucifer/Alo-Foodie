@@ -20,6 +20,9 @@ app.use(
 )
 app.use("/js", express.static(path.join(__dirname, "node_modules/jquery/dist")))
 
+app.use(express.static('./public'));
+
+
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
